@@ -1,0 +1,16 @@
+{
+    "pokemon": [
+        {
+            "name": "Pikachu",
+            "type": "Electric"
+        },
+        {
+            "name": "Charmander",
+            "type": "Fire"
+        },
+        {
+            "name": "Squirtle",
+            "type": "Water"
+        }
+    ]
+}
