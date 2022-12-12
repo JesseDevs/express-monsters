@@ -4,9 +4,13 @@
     <inner-column>
 
         <module>
-            <h1>LIST</h1>
-        </module>
+            <h1>POKEMONS</h1>
 
+            <% pokemons.forEach(poke => { %>
+            <li><%= poke.name%></li>
+            <% }); %>
+
+        </module>
     </inner-column>
 </section>
 
