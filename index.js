@@ -1,4 +1,4 @@
-import express, { request } from 'express';
+import express from 'express';
 const app = express();
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
@@ -16,7 +16,7 @@ app.get('/detail', (req, res) => {
 });
 
 app.use(function (req, res) {
-    res.status(404).render('pages/404', { query: req.url });
+    res.status(404).render('pages/404', { query: req.url })
 })
 
 
