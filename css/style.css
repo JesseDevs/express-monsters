@@ -17,7 +17,6 @@ body {
 	text-transform: uppercase;
 }
 
-.action-link:hover {}
 
 #menu-toggle:checked~.menu a:hover {
 	background-color: var(--accent);
