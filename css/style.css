@@ -1,8 +1,8 @@
-@import '_reset';
-@import '_setup';
-@import '_variables';
-@import '_typography';
-@import '_modules';
+@import 'reset.css';
+@import 'setup.css';
+@import 'variables.css';
+@import 'typography.css';
+@import 'modules.css';
 
 body {
 	position: relative;
