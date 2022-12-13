@@ -7,7 +7,8 @@
             <h1>POKEMONS</h1>
 
             <% pokemons.forEach(poke => { %>
-            <li><%= poke.name%></li>
+            <a href="/poke/<%= poke.id %>"><%= poke.name %></a>
+
             <% }); %>
 
         </module>

@@ -33,18 +33,24 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.static('css'));
 
-app.locals.pokemons = pokesData;
+// app.locals.pokemons = pokesData;
 
 app.get('/', (req, res) => {
     res.render('pages/home');
 });
 
-app.get('/list', (req, res) => {
-    res.render('pages/list', { pokemons: pokesData });
+app.get('/pokes', (req, res) => {
+    res.render('pages/pokes', { pokemons: pokesData });
 });
 
-app.get('/detail', (req, res) => {
-    res.render('pages/detail');
+app.get('/poke/:id', (req, res) => {
+    const id = req.params.id
+    const poke = pokesData.find(p => p.id === id)
+    res.render('pages/poke', { poke: poke })
+})
+
+app.get('/poke', (req, res) => {
+    res.render('pages/poke');
 });
 
 app.use(function (req, res) {

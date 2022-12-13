@@ -1,14 +1,17 @@
 [
     {
         "name": "Pikachu",
-        "type": "Electric"
+        "type": "Electric",
+        "id": "002"
     },
     {
         "name": "Charmander",
-        "type": "Fire"
+        "type": "Fire",
+        "id": "004"
     },
     {
         "name": "Squirtle",
-        "type": "Water"
+        "type": "Water",
+        "id": "006"
     }
 ]
