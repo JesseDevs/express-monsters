@@ -24,8 +24,8 @@ html {
 
 
 html {
-	--ink: #f4f6fb;
-	--page: black;
+	--ink: rgb(10, 10, 10);
+	--page: rgb(237, 239, 245);
 
 	background-color: var(--page);
 }

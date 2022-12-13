@@ -1,23 +1,43 @@
 <%- include ('../partials/header') %>
 
+
 <section>
     <inner-column>
         <module>
             <ul>
-                <% pokemons.forEach(poke => { %>
+                <% pokemons.forEach(poke => { 
+                        let idString = poke.id.toString();
+                        if (idString.length < 3) {
+                        idString = '0'.repeat(3 - idString.length) + idString;
+                        }
+
+                        let typeArr =pokemons.type;
+                    %>
                 <li>
-                    <a href="/pokes/<%= poke.id %>">
+                    <a href="/pokes/<%= idString %>">
 
                         <poke-card>
-                            <picture>
-                                <img src="<%= poke.image.hires %>" alt="" loading="lazy">
-                            </picture>
-                            <text-content>
+                            <title-section>
+                                <h5 class="strict-voice">#<%= idString %></h5>
                                 <picture>
                                     <img src="<%= poke.image.sprite %>" alt="">
                                 </picture>
-                                <p><strong><%= poke.name.english %></strong></p>
-                                <p class="tiny-voice"><em>[ The <%= poke.species %> ]</em></p>
+                            </title-section>
+                            <picture>
+                                <img src="<%= poke.image.hires %>" alt="" loading="lazy">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </picture>
+                            <text-content>
+                                <h4 class="chant-voice"><strong><%= poke.name.english %></strong></h4>
+
+                                <p><%= poke.type %></p>
+
+                                <p class="small-voice"><%= poke.description %></p>
+
                             </text-content>
 
                         </poke-card>
