@@ -15,6 +15,7 @@ poke-card {
 poke-card>picture {
     max-width: 300px;
     position: relative;
+    padding: 10px;
 }
 
 poke-card>picture div {
@@ -73,6 +74,10 @@ title-section {
 
     border: 1px solid rgba(8, 8, 8, 0.465);
     border-bottom: none;
+}
+
+title-section picture {
+    max-width: 50px;
 }
 
 title-section h5 {
