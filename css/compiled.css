@@ -12,13 +12,16 @@ poke-card {
     justify-content: center;
 }
 
-poke-card>picture {
-    max-width: 300px;
+article.main {
+    max-width: 280px;
+}
+
+.portrait {
     position: relative;
     padding: 10px;
 }
 
-poke-card>picture div {
+.portrait div {
     display: block;
     width: 100%;
     height: 100%;
@@ -27,31 +30,31 @@ poke-card>picture div {
     left: 0;
 }
 
-poke-card>picture div:nth-of-type(1) {
+.portrait div:nth-of-type(1) {
     clip-path: polygon(0 0, 0% 100%, 100% 0);
     background-color: hsla(0, 79%, 57%, 0.441);
     z-index: -6;
 }
 
-poke-card>picture div:nth-of-type(2) {
+.portrait div:nth-of-type(2) {
     clip-path: polygon(0 0, 100% 0, 100% 23%, 0 68%);
     background-color: hsla(0, 79%, 57%, 0.441);
     z-index: -7;
 }
 
-poke-card>picture div:nth-of-type(3) {
+.portrait div:nth-of-type(3) {
     clip-path: polygon(50% 0%, 100% 0, 100% 60%, 100% 0, 100% 75%, 0 8%, 0 0);
     background-color: hsla(0, 79%, 57%, 0.441);
     z-index: -5;
 }
 
-poke-card>picture div:nth-of-type(5) {
+.portrait div:nth-of-type(5) {
     clip-path: polygon(100% 0, 0 0, 100% 63%);
     background-color: hsla(0, 79%, 57%, 0.441);
     z-index: -3;
 }
 
-poke-card>picture div:nth-of-type(4) {
+.portrait div:nth-of-type(4) {
     clip-path: polygon(25% 0%, 100% 0, 100% 50%, 50% 89%, 0 53%, 0 0);
     background-color: hsla(0, 79%, 57%, 0.441);
     z-index: -4;
@@ -61,8 +64,9 @@ poke-card>picture div:nth-of-type(4) {
 poke-card text-content {
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding: 7px;
     justify-content: center;
+    gap: 7px;
 }
 
 title-section {
@@ -83,6 +87,18 @@ title-section picture {
 title-section h5 {
     font-weight: 800;
     letter-spacing: .03em;
+}
+
+.type-container {
+    display: flex;
+
+    gap: 10px;
+}
+
+.type-container p {
+    padding: 7px 12px;
+    border: 2px solid black;
+    border-radius: 50px;
 }/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
