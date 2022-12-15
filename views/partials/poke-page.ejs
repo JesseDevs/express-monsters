@@ -1,0 +1,32 @@
+<%   
+    let idString = pokemon.id.toString();
+    if (idString.length < 3) {
+    idString = '0'.repeat(3 - idString.length) + idString;
+    }
+%>
+
+<poke-page>
+	<title-section>
+		<h5 class="strict-voice">#<%= idString %></h5>
+		<picture>
+			<img src="<%= pokemon.image.sprite %>" alt="">
+		</picture>
+	</title-section>
+	<picture>
+		<img src="<%= pokemon.image.hires %>" alt="" loading="lazy">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</picture>
+	<text-content>
+		<h4 class="chant-voice"><strong><%= pokemon.name.english %></strong></h4>
+
+		<p><%= pokemon.type %></p>
+
+		<p class="small-voice"><%= pokemon.description %></p>
+
+	</text-content>
+
+</poke-page>

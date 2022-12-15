@@ -633,6 +633,14 @@ title-section span {
   color: rgb(255, 255, 255);
 }
 
+container-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
 .site-header inner-column {
   padding-top: 10px;
   padding-bottom: 0;
@@ -677,12 +685,4 @@ module ul {
 }
 .btn-svg svg {
   padding: 2px;
-}
-
-container-box {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
 }
