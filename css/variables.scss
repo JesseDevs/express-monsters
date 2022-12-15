@@ -5,63 +5,37 @@ html {
 	--simple-small-space: 5px;
 	--simple-space: 20px;
 	--simple-big-space: 40px;
-	--simple-bigbig: 60px;
 
-	--big-general-space: 12vh;
-	--general-space: 5vh;
+	--general-space: 8vh;
 	--tight-space: 2.6vh;
 
 	--thin: 3px;
 	--thick: 5px;
 	--Xthick: 9px;
-
-	--gray: rgb(196 193 190);
-	--darkgray: #474747;
-	--white: #f1f2f4;
-	--black: rgb(10 5 5);
-	--fade: rgb(5 5 5 / .16);
 }
-
 
 html {
-	--ink: rgb(10, 10, 10);
-	--page: rgb(237, 239, 245);
+	--white: rgb(245 245 245);
+	--black: rgb(10 10 10);
 
-	background-color: var(--page);
+	--highlight: rgba(0 139 139 /0.8);
+	--fullHighlight: rgba(0 139 139);
+	--accent: rgb(199, 35, 35);
+
+	--page: rgb(242, 238, 228);
 }
 
-@media(min-width: 1700px) {
+
+@media(min-width: 1600px) {
 
 	html {
-		--big-general-space: 6vh;
-		--general-space: 2.5vh;
-		--tight-space: 1.3vh;
+		--general-space: 3vh;
+		--tight-space: 1.7vh;
 	}
 }
+
 
 /* $animations*/
-
-@keyframes FadeInOut {
-	0% {
-		opacity: 1;
-	}
-
-	17% {
-		opacity: 1;
-	}
-
-	25% {
-		opacity: 0;
-	}
-
-	92% {
-		opacity: 0;
-	}
-
-	100% {
-		opacity: 1;
-	}
-}
 
 @keyframes drop-in {
 	from {
@@ -112,6 +86,7 @@ html {
 		transform: rotate3d(1, 0, 360deg);
 	}
 }
+
 
 @keyframes spin {
 	0% {
@@ -171,13 +146,14 @@ html {
 	}
 }
 
-
-@keyframes square {
-	0% {
-		transform: translateY(0);
+@keyframes leftFadeIn {
+	from {
+		opacity: 0;
+		transform: translateX(-200px);
 	}
 
-	100% {
-		transform: translateY(-700px) rotate(600deg);
+	to {
+		opacity: 1;
+		transform: translateX(0px);
 	}
 }

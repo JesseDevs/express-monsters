@@ -5,13 +5,17 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "sass-watch": "sass --no-source-map --watch css/style.scss css/compiled.css",
+    "nodemon-watch": "nodemon index.js -e *",
+    "start": "npm-run-all --parallel sass-watch nodemon-watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "ejs": "^3.1.8",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
   }
 }

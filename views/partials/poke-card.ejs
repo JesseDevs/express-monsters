@@ -1,23 +1,23 @@
-<% pokemons.forEach(poke => { 
+<% pokemons.forEach(pokemon => { 
 	
-	let idString = poke.id.toString();
+	let idString = pokemon.id.toString();
     if (idString.length < 3) {
     	idString = '0'.repeat(3 - idString.length) + idString;
 	}
-	let types = poke.type;
+	let types = pokemon.type;
 %>
 <li>
 	<poke-card>
-		<a href="/pokes/<%= idString %>">
+		<a href="/pokemon/<%= idString %>">
 			<article class="main">
 				<title-section>
 					<h5 class="strict-voice">#<%= idString %></h5>
 					<picture>
-						<img src="<%= poke.image.sprite %>" alt="">
+						<img src="<%= pokemon.image.sprite %>" alt="">
 					</picture>
 				</title-section>
 				<picture class="portrait">
-					<img src="<%= poke.image.hires %>" alt="" loading="lazy">
+					<img src="<%= pokemon.image.hires %>" alt="" loading="lazy">
 					<div></div>
 					<div></div>
 					<div></div>
@@ -27,13 +27,13 @@
 			</article>
 		</a>
 		<text-content>
-			<h4 class="chant-voice"><strong><%= poke.name.english %></strong></h4>
+			<h4 class="chant-voice"><strong><%= pokemon.name.english %></strong></h4>
 			<div class="type-container">
 				<% types.forEach(type => {%>
 				<p class="pill small-voice type"><%= type %></p>
 				<% }); %>
 			</div>
-			<p class="tiny-voice"><%= poke.description %></p>
+			<p class="tiny-voice"><%= pokemon.description %></p>
 
 		</text-content>
 	</poke-card>
