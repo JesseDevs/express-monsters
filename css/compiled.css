@@ -553,7 +553,12 @@ poke-card {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  max-width: 280px;
+  max-width: 300px;
+  border: 1px solid rgba(8, 8, 8, 0.8);
+}
+poke-card h4 {
+  width: 100%;
+  padding-left: 10px;
 }
 poke-card text-content {
   display: flex;
@@ -561,14 +566,10 @@ poke-card text-content {
   justify-content: center;
   gap: 7px;
   padding: 10px;
-  border: 1px solid rgba(8, 8, 8, 0.8);
-  border-top: none;
 }
 poke-card .portrait {
   position: relative;
   padding: 10px;
-  border-right: 1px solid rgba(8, 8, 8, 0.8);
-  border-left: 1px solid rgba(8, 8, 8, 0.8);
 }
 poke-card .portrait div {
   display: block;
@@ -610,8 +611,6 @@ title-section {
   align-items: center;
   gap: 10px;
   width: 100%;
-  border: 1px solid rgba(8, 8, 8, 0.8);
-  border-bottom: none;
 }
 title-section picture {
   max-width: 50px;
@@ -665,7 +664,7 @@ nav > a .ball-logo {
 
 module ul {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 15px;
   align-items: center;
 }
@@ -674,8 +673,16 @@ module ul {
   appearance: none;
   border-radius: 50%;
   max-width: 35px;
-  max-height: 35px;
+  height: 35px;
 }
 .btn-svg svg {
   padding: 2px;
+}
+
+container-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
 }

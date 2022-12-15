@@ -27,22 +27,20 @@ pokemons.forEach(pokemon => {
 				</picture>
 			</article>
 		</a>
-		<text-content>
-			<h4 class="strict-voice"><strong><%= pokemon.name.english %></strong></h4>
-			<div class="type-container">
 
+		<h4 class="strict-voice"><strong><%= pokemon.name.english %></strong></h4>
+		<container-box>
+			<div class="type-container">
 				<% types.forEach(type => {%>
 				<p class="pill small-voice <%= type %>"><%= type %></p>
 				<% }); %>
-
-				<action-links>
-
-					<%- include ('../partials/heart-button') %>
-
-					<%- include ('../partials/add-button') %>
-				</action-links>
 			</div>
-		</text-content>
+			<action-links>
+				<%- include ('../partials/heart-button') %>
+				<%- include ('../partials/add-button') %>
+			</action-links>
+		</container-box>
+
 	</poke-card>
 </li>
 <% }); %>

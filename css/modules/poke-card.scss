@@ -4,7 +4,13 @@ poke-card {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	max-width: 280px;
+	max-width: 300px;
+	border: 1px solid rgba(8, 8, 8, 0.8);
+
+	h4 {
+		width: 100%;
+		padding-left: 10px;
+	}
 
 	text-content {
 		display: flex;
@@ -13,16 +19,11 @@ poke-card {
 		gap: 7px;
 		padding: 10px;
 
-		border: 1px solid rgba(8, 8, 8, 0.8);
-		border-top: none;
 	}
 
 	.portrait {
 		position: relative;
 		padding: 10px;
-
-		border-right: 1px solid rgba(8, 8, 8, 0.8);
-		border-left: 1px solid rgba(8, 8, 8, 0.8);
 
 		div {
 			display: block;
@@ -71,9 +72,6 @@ title-section {
 	align-items: center;
 	gap: 10px;
 	width: 100%;
-
-	border: 1px solid rgba(8, 8, 8, 0.8);
-	border-bottom: none;
 
 	picture {
 		max-width: 50px;
