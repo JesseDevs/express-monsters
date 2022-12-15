@@ -4,9 +4,3 @@
 @import 'typography.scss';
 @import 'components.scss';
 @import 'modules.scss';
-
-module ul {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-    gap: 20px;
-}
