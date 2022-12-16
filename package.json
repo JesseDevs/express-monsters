@@ -7,7 +7,7 @@
   "scripts": {
     "sass-watch": "sass --no-source-map --watch css/style.scss css/compiled.css",
     "nodemon-watch": "nodemon index.js -e *",
-    "start": "npm-run-all --parallel sass-watch nodemon-watch"
+    "launch-app": "npm-run-all --parallel sass-watch nodemon-watch"
   },
   "author": "",
   "license": "ISC",
