@@ -9,7 +9,7 @@ app.use(express.static('public'));
 app.use(express.static('css'));
 
 
-app.listen(1994, function () {
+app.listen(process.env.PORT || 1994, function () {
     console.log("Server starting... localhost:1994")
 });
 
